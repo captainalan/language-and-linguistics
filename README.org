@@ -1,0 +1,2 @@
+* Language and Linguistics Website
+  See the thing deployed on [[https://captainalan.github.io/language-and-linguistics][Github Pages]].
