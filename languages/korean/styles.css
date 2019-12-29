@@ -1,0 +1,15 @@
+.ko-text {
+    font-family: Times;
+    color: #800000;
+}
+
+.caption {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
