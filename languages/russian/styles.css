@@ -1,0 +1,18 @@
+.intro p {
+    text-indent: 2rem;
+}
+
+.misc {
+    background-color: #eee;
+    border-radius: 25px;
+}
+
+.ru-text {
+    font-family: 'Podkova';
+    font-size: 125%;
+    color: #800000;
+}
+
+#tech-box {
+    background-color: #ffffcc;
+}
