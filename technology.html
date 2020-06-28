@@ -56,16 +56,70 @@
 
 
 	  <h2 id="CJK">Chinese, Japanese, Korean</h2>
-	  
-	  (Describe basic mechanics by which these languages work)
+      <p>
+        Chinese, Japanese, and Korean all have complicated scripts
+        that must incorporate an additional software level to read in
+        keypresses and then <em>compose</em> (in the case of Korean)
+        or <em>select</em> (in the case of Chinese and Japanese)
+        glyphs.
+      </p>
+      <p>
+        I wrote a descriptive article
+        on <a href="./languages/korean/input.html">Korean Input
+        Methods</a>.
+      </p>
 
 	  <h3>Platform Specific Tools</h3>
 
 	  <h4>Windows</h4>
-	  <p>(Insert details here)</p>
+	  <p>
+        Windows has pretty good default mutli-lingual support.
+        Yet, in many ways it seems to be a mess, reflecting different histories of keyboard support with different languages.
+      </p>
+      <blockquote>
+        <h5>Four Different Default Input Method Switching Keys</h5>
+        <p>
+          These are default keys on MS Windows; for some languages you
+          can modify them, for others you can't
+        </p>
+        <ul>
+          <li>
+            <b>Chinese</b>: Shift key toggles Pinyin/Chinese and underlying QWERTY
+          </li>
+          <li>
+            <b>Japanese</b>: without a Japanese keyboard, Alt +
+            backtick toggles Japanese input and underlying QWERTY;
+            there are ways to toggle Katakana/Hiragana but I don't
+            think people do this much&mdash;they justly rely on predictive
+            text
+          </li>
+          <li>
+            <b>Korean</b> right Alt key is to toggle between
+            Korean/QWERTY input. The right Ctrl key does Korean hangul
+            to hanja (Chinese character) conversion; this is rarely
+            used by most people. Because the right modifiers are used
+            for language-related things, doing stuff like programing
+            and the like, you have to use ctrl + alt on the left hand
+          </li>
+          <li>
+            <b>Russian</b> (and other European languages): to switch
+            keyboard layouts, you will have to press Windows + Space;
+            this is also how you switch between Russian and other
+            languages (such as those listed above)
+          </li>
+        </ul>
+      </blockquote>
 
 	  <h4>Linux</h4>
-	  <p>(Insert details here)</p>
+	  <p>
+        Recently my setup is to use <code>fcitx</code> with Sun Pinyin
+        for Chinese and Mozc for Japanese. My setup is only 90%
+        working on Linux; there are lots of things that can get
+        confusing when you pile a whole bunch of layers of (software)
+        abstraction on top of each other especially if you try to do
+        stuff like rebind other keys on your computer or use
+        specialized peripherals (e.g. keyboard, mouse).
+      </p>
 
 	</div>
 	<div class="col-md-4 mt-5" id="LinksAndResources"> 
@@ -76,7 +130,11 @@
 
 	  <h3>Resources</h3>
 	  <ul>
-	    <li>Xah Lee materials on input methods</li>
+	    <li>
+          Xah Lee
+          on <a href="http://xahlee.info/kbd/keyboard_layout_keybinding.html">Keyboard
+          Layout Design</a>
+        </li>
 	  </ul>
 	  <h3>Emacs</h3>
 	  <p>
