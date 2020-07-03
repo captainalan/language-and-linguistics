@@ -33,17 +33,13 @@ nav {
 
 /* Override plain tags with IDs, classes, etc. */
 
-#LinksAndResources {
+#EmacsBox {
     background-image: linear-gradient(to bottom, #EEE, white);
     padding: 0.8rem;
 }
 
-#LinksAndResources > p {
+#EmacsBox > p {
     text-indent: 0;
-}
-
-#LinksAndResources > h2, #LinksAndResources > h3 {
-    color: #333;
 }
 
 .abstract {
