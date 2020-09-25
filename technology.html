@@ -11,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Multilingual Computing</title>
+    <title>Language Technology</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,181 +30,213 @@
       </div>
     </nav>
     
-    <div class="container">
+    <main class="container">
       
+      <section class="row">
+        <article class="col-lg-12 mt-3">
+          <h1>Language Technology</h1>
+
+          <div class="abstract">
+            <p>
+              Face-to-face interactions&mdash;as well as audio/video
+              to an extent&mdash;unify the "language interface". It is
+              in <span class="term">writing</span> and with different
+              scripts that languages can start to really differ
+              radically in form! Historically, we can see that the
+              form of different scripts is informed by <em>how the
+              glyphs of that language were formed</em>. For example,
+              in East Asia, we see brush-based scripts. Cuneiform is
+              based off wedges being pressed into clay. Europe saw the
+              use of quill/feather pens. With computers in the 21st
+              century, all this diversity is smashed together into the
+              same glowing screen interface...
+            </p>
+            <p>
+              The focus of this page is on the language technology of
+              writing in the context of <span class="term">Information
+              Technology (IT)</span>, including personal computers and
+              smartphones.
+            </p>
+          </div>
+        </article>
+      </section>
+
       <div class="row">
-	<div class="col-lg-12 mt-3">
+        <div class="col-md-8 prose">
+          <h2 style="color:red;">This page is under construction... 🚧</h2>
 
-	  <h1>Multilingual Computing</h1>
-	  <div class="abstract">
-      <p>
-        Face-to-face interactions (as well as audio/video) unify the "language 
-        interface". It is in <em>writing</em> and with different scripts that
-        things start to get more interesting!
-      </p>
-	    <h2>Keyboarding</h2>
-	    <p>
-	      How can a keyboard with a hundred or so keys be used to
-	      type thousands of different Chinese characters? How do I
-	      type accent marks correctly so I can pass Spanish class?
-	      These questions and more will be answered on this page.
-	    </p>
-	    <hr>
-	  </div>
-	</div>
-      </div>
+          <h2>Keyboarding</h2>
+          <p>
+            How can a keyboard with a hundred or so keys be used to
+            type thousands of different Chinese characters? How do I
+            type accent marks correctly so I can pass Spanish class?
+            These questions and more will be answered on this page.
+           </p>
 
-      <div class="row">
-	<div class="col-md-8 prose">
-	  <h2 id="Western">Western Scripts</h2>
-
-	  <p>
-        (About International keyboards)
-      </p>
-      <p>
-        If you (want to) write a lot of another language, you should
-        learn a dedicated keyboard layout for multi-lingual input. For
-        typing Spanish/French/German/etc. I use the US International
-        keyboard...
-      </p>
-      <p>
-        If you don't have to type <em>that many</em> special
-        characters, making use of a **compose key** can be a
-        non-intrusive way to get multilingual text powers. I map this
-        key to the right Windows key on my (full-sized) keyboard.
-      </p>
+          <h3 id="Western">Western Scripts</h3>
+          <p>
+            If you (want to) write a lot of another language, you
+            should learn a dedicated keyboard layout for multi-lingual
+            input. For typing Spanish/French/German/etc. I use the US
+            International keyboard. Using a language like Russian or
+            Arabic will require learning a new keyboard layout. You
+            should learn the standard layouts for these languages
+            rather than trying to learn some "phonetic" QWERTY-like
+            variant, given the choice.
+          </p>
+          <p>
+            If you don't have to type <em>that many</em> special
+            characters, making use of a <span class="term">compose
+            key</span> can be a non-intrusive way to get multilingual
+            text powers. On Linux, I map this key to the right Windows
+            key on my (full-sized) keyboard.
+          </p>
 
 
-	  <h2 id="CJK">Chinese, Japanese, Korean</h2>
-      <p>
-        Chinese, Japanese, and Korean all have complicated scripts
-        that must incorporate an additional software level to read in
-        keypresses and then <em>compose</em> (in the case of Korean)
-        or <em>select</em> (in the case of Chinese and Japanese)
-        glyphs.
-      </p>
-      <p>
-        I wrote a descriptive article
-        on <a href="./languages/korean/input.html">Korean Input
-        Methods</a>
-      </p>
+          <h3 id="CJK">Chinese, Japanese, Korean</h3>
+          <p>
+            Chinese, Japanese, and Korean all have complicated scripts
+            that must incorporate an additional software level to read
+            in keypresses and then <em>compose</em> (in the case of
+            Korean) or <em>select</em> (in the case of Chinese and
+            Japanese) glyphs.
+          </p>
+          <p>
+            I wrote a descriptive article
+            on <a href="./languages/korean/input.html">Korean Input
+            Methods</a>
+          </p>
 
-	  <h3>Platform Specific Tools</h3>
+          <h3>Platform Specific Tools</h3>
+          <p>
+            The more different scripts you make use of, the more
+            complicated your setup will necessarily become.
+          </p>
 
-	  <h4>Windows</h4>
-	  <p>
-        Windows has pretty good default mutli-lingual support.
-        Yet, in many ways it seems to be a mess, reflecting different histories of keyboard support with different languages.
-      </p>
-      <blockquote>
-        <h5>Four Different Default Input Method Switching Keys</h5>
-        <p>
-          These are default keys on MS Windows; for some languages you
-          can modify them, for others you can't
-        </p>
-        <ul>
-          <li>
-            <b>Chinese</b>: Shift key toggles Pinyin/Chinese and underlying QWERTY
-          </li>
-          <li>
-            <b>Japanese</b>: without a Japanese keyboard, Alt +
-            backtick toggles Japanese input and underlying QWERTY;
-            there are ways to toggle Katakana/Hiragana but I don't
-            think people do this much&mdash;they justly rely on predictive
-            text
-          </li>
-          <li>
-            <b>Korean</b> right Alt key is to toggle between
-            Korean/QWERTY input. The right Ctrl key does Korean hangul
-            to hanja (Chinese character) conversion; this is rarely
-            used by most people. Because the right modifiers are used
-            for language-related things, doing stuff like programing
-            and the like, you have to use ctrl + alt on the left hand
-          </li>
-          <li>
-            <b>Russian</b> (and other European languages): to switch
-            keyboard layouts, you will have to press Windows + Space;
-            this is also how you switch between Russian and other
-            languages (such as those listed above)
-          </li>
-        </ul>
-      </blockquote>
+          <h4>Windows</h4>
+          <p>
+            Windows has pretty good default mutli-lingual support.
+            Yet, in many ways it seems to be a mess, reflecting
+            different histories of keyboard support with different
+            languages.
+          </p>
 
-	  <h4>Linux</h4>
-	  <p style="text-decoration:line-through;">
-        Recently my setup is to use <code>fcitx</code> with Sun Pinyin
-        for Chinese and Mozc for Japanese. My setup is only 90%
-        working on Linux; there are lots of things that can get
-        confusing when you pile a whole bunch of layers of (software)
-        abstraction on top of each other especially if you try to do
-        stuff like rebind other keys on your computer or use
-        specialized peripherals (e.g. keyboard, mouse).
-      </p>
-      <p>
-        Update 07/03/2020&mdash;currently I'm doing my
-        Chinese/Japanese/Korean stuff on Windows and European
-        languages on Linux.
-      </p>
+          <blockquote>
+            <h5>Four Different Default Input Method Switching Keys</h5>
+            <p>
+              These are default keys on MS Windows; for some languages you
+              can modify them, for others you can't
+            </p>
 
-	</div>
-	<div class="col-md-4 mt-5" id="EmacsBox"> 
-	  <h2>Emacs</h2>
-	  <p>
-	    Emacs, which can be installed on all major operating
-	    systems, provides multilingual input out-of-the-box,
-	    provided you have the correct fonts installed. This can be
-	    useful for working with other languages and not changing
-	    too many configs. Emacs also contains input methods for
-	    doing things like typing <i>Hànyǔ Pīnyīn</i> (Romanized
-	    Chinese standard) which is not easily done with default
-	    OS's multilingual support.
-	    Google's <a href="https://www.google.com/get/noto/">Noto
-	    fonts</a> are freely available and work well with pretty
-	    much any language/script.
-	  </p>
-      <p>
-        The <code>*-prefix</code> input methods are similar to using
-        the US international keyboard (with "dead keys"). Using the
-        <code>spanish-prefix</code> method, for instance, I can type
-        <code>pi~nata</code> and it will give me 
-        <span lang="es"><i>piñata</i></span>.
-      </p>
-      <p>
-        Combined with a tool
-        like <a href="https://pandoc.org/">pandoc</a>, this is a great
-        way to smash out assignments in a foreign language with very
-        little config, especially if you're already using/familiar
-        with emacs for other things.
-      </p>
-	</div>
+            <ul>
+              <li>
+                <b>Chinese</b>: Shift key toggles Pinyin/Chinese and underlying QWERTY
+              </li>
+              <li>
+                <b>Japanese</b>: without a Japanese keyboard, Alt +
+                backtick toggles Japanese input and underlying QWERTY;
+                there are ways to toggle Katakana/Hiragana but I don't
+                think people do this much&mdash;they justly rely on
+                predictive text
+              </li>
+              <li>
+                <b>Korean</b> right Alt key is to toggle between
+                Korean/QWERTY input. The right Ctrl key does Korean
+                hangul to hanja (Chinese character) conversion; this
+                is rarely used by most people. Because the right
+                modifiers are used for language-related things, doing
+                stuff like programing and the like, you have to use
+                ctrl + alt on the left hand
+              </li>
+              <li>
+                <b>Russian</b> (and other European languages): to
+                switch keyboard layouts, you will have to press
+                Windows + Space; this is also how you switch between
+                Russian and other languages (such as those listed
+                above)
+              </li>
+            </ul>
+          </blockquote>
+
+          <h4>Linux</h4>
+          <p style="text-decoration:line-through;">
+            Recently my setup is to use <code>fcitx</code> with Sun
+            Pinyin for Chinese and Mozc for Japanese. My setup is only
+            90% working on Linux; there are lots of things that can
+            get confusing when you pile a whole bunch of layers of
+            (software) abstraction on top of each other especially if
+            you try to do stuff like rebind other keys on your
+            computer or use specialized peripherals (e.g. keyboard,
+            mouse).
+          </p>
+          <p>
+            Update 07/03/2020&mdash;currently I'm doing my
+            Chinese/Japanese/Korean stuff on Windows and European
+            languages on Linux.
+          </p>
+
+        </div>
+        <div class="col-md-4 mt-5" id="EmacsBox"> 
+          <h2>Emacs</h2>
+          <p>
+            Emacs, which can be installed on all major operating
+            systems, provides multilingual input out-of-the-box,
+            provided you have the correct fonts installed. This can be
+            useful for working with other languages and not changing
+            too many configs. Emacs also contains input methods for
+            doing things like typing <i>Hànyǔ Pīnyīn</i> (Romanized
+            Chinese standard) which is not easily done with default
+            OS's multilingual support.
+            Google's <a href="https://www.google.com/get/noto/">Noto
+            fonts</a> are freely available and work well with pretty
+            much any language/script.
+          </p>
+          <p>
+            The <code>*-prefix</code> input methods are similar to
+            using the US international keyboard (with "dead keys").
+            Using the
+            <code>spanish-prefix</code> method, for instance, I can type
+            <code>pi~nata</code> and it will give me 
+            <span lang="es"><i>piñata</i></span>.
+          </p>
+          <p>
+            Combined with a tool
+            like <a href="https://pandoc.org/">pandoc</a>, this is a
+            great way to smash out assignments in a foreign language
+            with very little config, especially if you're already
+            using/familiar with emacs for other things.
+          </p>
+        </div>
       </div>
      
       <div class="row" id="footer">
-	<div class="col-md-12">
-	  <hr> <!-- -------------------------------------------------------- -->
+        <div class="col-md-12">
+          <hr> <!-- -------------------------------------------------------- -->
 
-	  <h2>Links and Resources</h2>
-	  <ul>
-	    <li>
-          Xah Lee
-          on <a href="http://xahlee.info/kbd/keyboard_layout_keybinding.html">Keyboard
-          Layout Design</a>
-        </li>
-	  </ul>
-	</div>
+          <h2>Links and Resources</h2>
+          <ul>
+            <li>
+              Xah Lee
+              on <a href="http://xahlee.info/kbd/keyboard_layout_keybinding.html">Keyboard
+                Layout Design</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      
+    </main>
+
+    <footer class="container">
       <!-- Footer -->
-      <div class="row" id="footer">
-	<div class="col-md-12">
-	  <hr>
-          <span>
-            Copyright © 2019&ndash;2020 &mdash; Alan Wong.<br> All rights reserved.
-          </span>
-	</div>
-      </div>
-      
-    </div>
+      <section class="row">
+        <div class="col-md-12">
+        <hr>
+            <span>
+                Copyright © 2019&ndash;2020 &mdash; Alan Wong<br> All rights reserved.
+            </span>
+        </div>
+      </section>
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
