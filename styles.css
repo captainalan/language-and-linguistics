@@ -1,7 +1,6 @@
 /* Plain tags first */
 
 h1 {
-    font-family: "Georgia", serif;
     text-align: center;
     padding: 1rem 0 1rem 0;
 }
@@ -26,10 +25,6 @@ p {
     text-indent: 2em;
 }
 
-
-nav {
-    font-family: "Georgia", serif;
-}
 
 /* Override plain tags with IDs, classes, etc. */
 
