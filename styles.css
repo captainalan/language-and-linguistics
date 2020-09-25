@@ -1,5 +1,4 @@
 /* Plain tags first */
-
 h1 {
     text-align: center;
     padding: 1rem 0 1rem 0;
@@ -22,7 +21,7 @@ h3, h4, h5 {
 p {
     font-family: "Arial", sans-serif;
     padding: 0 1rem 0.5rem 1rem;
-    text-indent: 2em;
+    text-indent: 1em;
 }
 
 
@@ -38,7 +37,8 @@ p {
 }
 
 .abstract {
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+    background-color: #FAFAFA;
 }
 
 
@@ -59,7 +59,12 @@ p {
     padding: 1rem;
 }
 
-
 .my-nav {
     padding: 4rem 1rem 4rem 1rem; /* Be nice to the HD monitor ppl */
+}
+
+/* Key Terms */
+span.term {
+    font-weight: bold;
+    background-color: #AFEEEE;
 }
