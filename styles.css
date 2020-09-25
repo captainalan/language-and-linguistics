@@ -46,7 +46,6 @@ p {
     font-family: "Georgia", serif;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
 }
 
 .abstract > hr {
@@ -63,8 +62,4 @@ p {
 
 .my-nav {
     padding: 4rem 1rem 4rem 1rem; /* Be nice to the HD monitor ppl */
-}
-
-#footer {
-    background: white;
 }
