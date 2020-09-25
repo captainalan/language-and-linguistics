@@ -61,19 +61,111 @@
         </article>
       </section>
 
-      <div class="row">
-        <div class="col-md-8 prose">
-          <h2 style="color:red;">This page is under construction... 🚧</h2>
-
-          <h2>Keyboarding</h2>
+      <section class="row">
+        <article class="col-12">
+          <h2>Crafting the Multi-lingual Web</h2>
           <p>
-            How can a keyboard with a hundred or so keys be used to
-            type thousands of different Chinese characters? How do I
-            type accent marks correctly so I can pass Spanish class?
-            These questions and more will be answered on this page.
+            Whatever technique you are using to produce web content
+            (e.g. manually writing HTML as I am here, or using a
+            framework like React), you will want to make sure you have
+            control over the <code>lang</code> HTML attribute. Learn
+            more about this from
+            the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang">MDN
+            web docs</a>. For example, if you need to use a paragraph
+            of Korean in a webpage, you ought to do
+            set <code>lang="ko"</code> in your paragraph tag.
+          </p>
+          <p>
+            Setting the <code>lang</code> attribute is better than
+            ad-hoc solutions to make a webpage <em>look</em> the right
+            way because you are specifying
+            the <span class="term">semantics</span> of some content.
+            It is not enough to just have some words, we must tell our
+            clients' browsers the language we're writing in! This can
+            make it more likely that tools like screen readers,
+            automatic translation services, and even correct font
+            rendering (still a problem often, unfortunately) succeed.
+          </p>
+        </article>
+      </section>
+      <section class="row">
+        <article class="col-md-6">
+          <h3>Make text big enough to read!</h3>
+          <p>
+            Some scripts need bigger characters to read than others.
+            My eyesight isn't terrible, but I still zoom in to read
+            East Asian texts so I don't have to needlessly suffer.
+            Using the lang attribute, as described above, you
+            can <a href="https://www.w3schools.com/css/css_attribute_selectors.asp">make
+            certain languages display with larger text!</a>.
+            Samples below:
+          </p>
+          <div style="background-color:#FAFAFA; font-weight:light; border-radius:10px" class="px-3 pt-3 pb-2 mb-3 text-center">
+            <p lang="zh-Hant">沒想到，打字比手寫方便多了。</p>
+            <p lang="ja">１２５％のサイズで読みやすいですよ。</p>
+            <p lang="ko">타자하기는 정말 재미 있어요</p>
+            <p lang="es">No es necesario magnificar texto español.</p>
+          </div>
+          <p>
+            Considering script-particular attributes can differentiate
+            your hand-crafted localization work from careless
+            automated localization. Additional areas where language
+            specific issues may come up include languages read right
+            to left (e.g. Hebrew, Arabic), the presence of rare
+            characters (writing a page on Egyptian hieroglyphics?) and
+            whether or not suitable font faces are available to
+            support your site design in all of your target languages.
+          </p>
+          <figure>
+            <img class="figure-img img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Magnifying_glass_hebrew.jpg" alt="Magnifying Glass Over Hebrew Text">
+
+            <figcaption class="figure-caption">Users shouldn't be expected to zoom in.</figcaption>
+          </figure>
+ 
+        </article>
+        <article class="col-md-6">
+          <h3>Try out your sites on multiple browsers</h3>
+          <p>
+            ...and if there is any fancy feature that may break your
+            design/UI on any common browser, reconsider if it is worth
+            using at all. It may be better to have your site not
+            remembered at all than remembered for breaking.
+          </p>
+          <figure>
+            <img class="figure-img img-fluid rounded" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/CRT_Monitor_2014-01-01_23-42.jpg" alt="CRT Monitor">
+
+            <figcaption class="figure-caption">Support many browsers and machines.</figcaption>
+          </figure>
+ 
+          <h3>Do prepare a "mobile-friendly" site</h3>
+          <p>
+            You never know who will want to read your webpages while
+            poopin'. Making a mobile-friendly site is also a good way
+            to get thinking about you want to modularize the content
+            of your site. This will make refactoring sections easier
+            in the future if you decide to do that.
+          </p>
+        </article>
+      </section>
+
+      <section class="row">
+        <div class="col-12">
+          <hr>
+        </div>
+      </section>
+
+      <section class="row">
+        <article class="col-md-8 prose">
+          <h2>Text Input</h2>
+          <p>
+            How can a <span class="term">keyboard</span> with a
+            hundred or so keys be used to type thousands of different
+            Chinese characters? How do I type accent marks correctly
+            so I can pass Spanish class? These questions and more will
+            be answered on this page.
            </p>
 
-          <h3 id="Western">Western Scripts</h3>
+          <h3>Keyboard Basics</h3>
           <p>
             If you (want to) write a lot of another language, you
             should learn a dedicated keyboard layout for multi-lingual
@@ -85,6 +177,16 @@
             variant, given the choice.
           </p>
           <p>
+            Chinese, Japanese, and Korean all have complicated scripts
+            that must incorporate an additional software level to read
+            in keypresses and then <em>compose</em> (in the case of
+            Korean) or <em>select</em> (in the case of Chinese and
+            Japanese) glyphs. I wrote a descriptive article
+            on <a href="./languages/korean/input.html">Korean Input
+            Methods</a>, which describes some specifics of typing
+            Korean, which makes use of its own non-Latin alphabet.
+          </p>
+          <p>
             If you don't have to type <em>that many</em> special
             characters, making use of a <span class="term">compose
             key</span> can be a non-intrusive way to get multilingual
@@ -92,25 +194,16 @@
             key on my (full-sized) keyboard.
           </p>
 
-
-          <h3 id="CJK">Chinese, Japanese, Korean</h3>
-          <p>
-            Chinese, Japanese, and Korean all have complicated scripts
-            that must incorporate an additional software level to read
-            in keypresses and then <em>compose</em> (in the case of
-            Korean) or <em>select</em> (in the case of Chinese and
-            Japanese) glyphs.
-          </p>
-          <p>
-            I wrote a descriptive article
-            on <a href="./languages/korean/input.html">Korean Input
-            Methods</a>
-          </p>
-
-          <h3>Platform Specific Tools</h3>
+          <h3>Platform Specific Notes</h3>
           <p>
             The more different scripts you make use of, the more
-            complicated your setup will necessarily become.
+            complicated your setup will necessarily become. If it is
+            not too much trouble to do, if is often easier to isolate
+            the contexts in which you use particular languages (e.g.
+            set up Korean input on one account/computer and do Arabic
+            only from your phone). The world can handle bilingualism,
+            but jumping between too many languagse will likely have
+            you working against your technology.
           </p>
 
           <h4>Windows</h4>
@@ -159,24 +252,21 @@
           </blockquote>
 
           <h4>Linux</h4>
-          <p style="text-decoration:line-through;">
-            Recently my setup is to use <code>fcitx</code> with Sun
-            Pinyin for Chinese and Mozc for Japanese. My setup is only
-            90% working on Linux; there are lots of things that can
-            get confusing when you pile a whole bunch of layers of
-            (software) abstraction on top of each other especially if
-            you try to do stuff like rebind other keys on your
-            computer or use specialized peripherals (e.g. keyboard,
-            mouse).
-          </p>
           <p>
-            Update 07/03/2020&mdash;currently I'm doing my
-            Chinese/Japanese/Korean stuff on Windows and European
-            languages on Linux.
+            Switching between different "underlying" keyboard layouts
+            (e.g. English, Russian) can be done using included
+            software of most distributions. To enter in complex input
+            like Chinese/Japanese/Korean, you'll probably need to make
+            use of <code>fcitx</code>, <code>ibus</code> or some other
+            software package. I have not had success getthing these
+            packages to also work with changing an underlying keyboard
+            layout&mdash;everything gets complicated and my computer
+            crashes. So, now I only do European languages on Linux.
+            Windows is my borg Asian language machine 🤖
           </p>
 
-        </div>
-        <div class="col-md-4 mt-5" id="EmacsBox"> 
+        </article>
+        <article class="col-md-4 mt-5" id="EmacsBox"> 
           <h2>Emacs</h2>
           <p>
             Emacs, which can be installed on all major operating
@@ -206,8 +296,8 @@
             with very little config, especially if you're already
             using/familiar with emacs for other things.
           </p>
-        </div>
-      </div>
+        </article>
+      </section>
      
       <div class="row" id="footer">
         <div class="col-md-12">

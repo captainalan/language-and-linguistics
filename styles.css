@@ -21,7 +21,10 @@ h3, h4, h5 {
 p {
     font-family: "Arial", sans-serif;
     padding: 0 1rem 0.5rem 1rem;
-    text-indent: 1em;
+}
+
+p[lang|="zh"], p[lang="ja"], p[lang="ko"] {
+    font-size: 125%;
 }
 
 
