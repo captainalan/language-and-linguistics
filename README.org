@@ -1,2 +1,7 @@
 * Language and Linguistics Website
   See the thing deployed on [[https://captainalan.github.io/language-and-linguistics][Github Pages]].
+  
+** Planned updates
+   I'm refactoring content on the main pages into smaller,
+   single-topic pages. No links should be broken through this process,
+   though new pages will be created.
