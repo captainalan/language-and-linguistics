@@ -1,0 +1,7 @@
+/* Style for in-line German */
+span[lang=de] {
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    text-shadow: 0 0 3px gold;
+}
