@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- Custom JavaScript -->
+    <script src="level-001.js"></script>
+    <title>Latin, Level 1</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="row">
+        <article class="col-12">
+            <h1>Latin, Level 1</h1>
+            <p>
+              This program will drill you on <b>first declension</b>
+              nouns in a variety of constructions. JavaScript is
+              required for this page to function correctly.
+            </p>
+
+        </article>
+      </section>
+      <section class="row">
+        <article class="col-md-6">
+          <h2>Practice Sentences</h2>
+          <p>
+            (Practice sentences should make use of all the forms).
+          </p>
+        </article>
+        <article class="col-md-6">
+          <h2>Noun Info</h2>
+           
+            <div id="table-area"></div>
+            <button class="btn btn-primary" id="table-button">New Word</button>
+
+<script>
+// Assumes the library above loaded successfully
+const nounButton = document.getElementById("table-button");
+const nounTable = document.getElementById("table-area");
+// Vocabulary as dictionary
+const nouns = [
+    {
+        id: "tabella", // For lookup
+        gloss: "tablet",
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "tabella",
+            plural: "tabellæ",
+        },
+        genitive: {
+            singular: "tabellæ",
+            plural: "tabellārum",
+        },
+        dative: {
+            singular: "tabellæ",
+            plural: "tabellīs",
+        },
+        accusative: {
+            singular: "tabellam",
+            plural: "tabellās",
+        },
+        ablative: {
+            singular: "tabellā",
+            plural: "tabellīs",
+        },
+        vocative: {
+            singular: "tabella",
+            plural: "tabellæ",
+        },
+    },
+    {
+        id: "", // For lookup
+        gloss: "gate",
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "porta",
+            plural: "portæ",
+        },
+        genitive: {
+            singular: "portæ",
+            plural: "portārum",
+        },
+        dative: {
+            singular: "portæ",
+            plural: "portīs",
+        },
+        accusative: {
+            singular: "portam",
+            plural: "portās",
+        },
+        ablative: {
+            singular: "portā",
+            plural: "portīs",
+        },
+        vocative: {
+            singular: "porta",
+            plural: "portæ",
+        },
+    }
+];
+
+// Clicking button draws new noun table
+nounButton.onclick = function() {
+    let choice = Math.floor(Math.random() * nouns.length);
+    noun_table(nounTable, nouns[choice]);
+};
+
+// Initialize table with the first noun
+noun_table(nounTable, nouns[0]);
+</script>
+
+        </article>
+      </section>
+    </main>
+
+    <footer class="container">
+      <hr>
+      Last updated October, 2020.
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
