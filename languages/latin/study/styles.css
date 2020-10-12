@@ -1,0 +1,22 @@
+/* Styling for examples sentences and glosses*/
+div.example {
+    background: #EFEFEF;
+    border-radius: 2.5px;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-top: 0.5rem;
+}
+div.example p[lang="la"] {
+    font-family: "Times New Roman";
+    font-size: 150%;
+    margin-bottom: 2px;
+}
+
+div.example p.gloss {
+    font-style: italic;
+    margin-bottom: 0.25rem;
+}
+
+span.example_word {
+    font-weight: bold;
+    color: navy;
+}
