@@ -69,6 +69,31 @@ const noun_table = function(element, noun) {
     element.innerHTML = table_string;
 };
 const update_sentences = function(noun) {
+
+    const nominative_sg = document.getElementById("nominative_singular_example");
+    nominative_sg.innerText = noun.nominative.singular
+        .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+
+    const nominative_pl = document.getElementById("nominative_plural_example");
+    nominative_pl.innerText = noun.nominative.plural
+        .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+
+    const genitive_sg = document.getElementById("genitive_singular_example");
+    genitive_sg.innerText = noun.genitive.singular;
+
+    const genitive_pl = document.getElementById("genitive_plural_example");
+    genitive_pl.innerText = noun.genitive.plural;
+
+    const accusative_sg = document.getElementById("accusative_singular_example");
+    accusative_sg.innerText = noun.accusative.singular
+        .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+
+    const accusative_pl = document.getElementById("accusative_plural_example");
+    accusative_pl.innerText = noun.accusative.plural;
+
+    const dative_sg = document.getElementById("dative_singular_example");
+    dative_sg.innerText = noun.dative.singular;
+
     const ablative_sg = document.getElementById("ablative_singular_example");
     ablative_sg.innerText = noun.ablative.singular;
 
@@ -118,7 +143,7 @@ const nouns = [
         },
     },
     {
-        id: "", // For lookup
+        id: "porta", // For lookup
         gloss: "gate",
         gender: "f", // should be 'm', 'f', or 'n'
         declension: "first",
@@ -146,7 +171,37 @@ const nouns = [
             singular: "porta",
             plural: "portæ",
         },
-    }
+    },
+    {
+        id: "puella", // For lookup
+        gloss: "girl",
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "puella",
+            plural: "portæ",
+        },
+        genitive: {
+            singular: "puellæ",
+            plural: "puellārum",
+        },
+        dative: {
+            singular: "puellæ",
+            plural: "puellīs",
+        },
+        accusative: {
+            singular: "puellam",
+            plural: "puellās",
+        },
+        ablative: {
+            singular: "puellā",
+            plural: "puellīs",
+        },
+        vocative: {
+            singular: "puella",
+            plural: "puellæ",
+        },
+    },
 ];
 
 // Clicking button draws new noun table
@@ -162,3 +217,5 @@ nounButton.onclick = function() {
 // Initialize table with the first noun
 noun_table(nounTable, nouns[0]);
 update_sentences(nouns[0]);
+
+// TODO Populate word list

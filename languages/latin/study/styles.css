@@ -3,7 +3,8 @@ div.example {
     background: #EFEFEF;
     border-radius: 2.5px;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
 }
 div.example p[lang="la"] {
     font-family: "Times New Roman";
