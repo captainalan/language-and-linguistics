@@ -93,6 +93,8 @@ const update_sentences = function(noun) {
 
     const dative_sg = document.getElementById("dative_singular_example");
     dative_sg.innerText = noun.dative.singular;
+    const dative_pl = document.getElementById("dative_plural_example");
+    dative_pl.innerText = noun.dative.plural;
 
     const ablative_sg = document.getElementById("ablative_singular_example");
     ablative_sg.innerText = noun.ablative.singular;
@@ -100,6 +102,14 @@ const update_sentences = function(noun) {
     const ablative_pl = document.getElementById("ablative_plural_example");
     ablative_pl.innerText = noun.ablative.plural;
     
+    const vocative_sg = document.getElementById("vocative_singular_example");
+    vocative_sg.innerText = noun.vocative.singular
+        .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+
+    const vocative_pl = document.getElementById("vocative_plural_example");
+    vocative_pl.innerText = noun.vocative.plural
+        .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+
     const glosses = document.getElementsByClassName("inline_gloss");
     for (let i = 0; i < glosses.length; i++) {
         glosses.item(i).innerText =  noun.gloss;
@@ -179,7 +189,7 @@ const nouns = [
         declension: "first",
         nominative: {
             singular: "puella",
-            plural: "portæ",
+            plural: "puellæ",
         },
         genitive: {
             singular: "puellæ",
@@ -202,6 +212,66 @@ const nouns = [
             plural: "puellæ",
         },
     },
+    {
+        id: "furca", // For lookup
+        gloss: "fork",
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "furca",
+            plural: "furcæ",
+        },
+        genitive: {
+            singular: "furcæ",
+            plural: "furcārum",
+        },
+        dative: {
+            singular: "furcæ",
+            plural: "furcīs",
+        },
+        accusative: {
+            singular: "furcam",
+            plural: "furcās",
+        },
+        ablative: {
+            singular: "furcā",
+            plural: "furcīs",
+        },
+        vocative: {
+            singular: "furca",
+            plural: "furcæ",
+        },
+    },
+    {
+        id: "gallea", // For lookup
+        gloss: "helmet",
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "galea",
+            plural: "galeæ",
+        },
+        genitive: {
+            singular: "galeæ",
+            plural: "galeārum",
+        },
+        dative: {
+            singular: "galeæ",
+            plural: "galeīs",
+        },
+        accusative: {
+            singular: "galeam",
+            plural: "galeās",
+        },
+        ablative: {
+            singular: "galeā",
+            plural: "galeīs",
+        },
+        vocative: {
+            singular: "galea",
+            plural: "galeæ",
+        },
+    },
 ];
 
 // Clicking button draws new noun table
@@ -218,4 +288,11 @@ nounButton.onclick = function() {
 noun_table(nounTable, nouns[0]);
 update_sentences(nouns[0]);
 
-// TODO Populate word list
+// Populate word list
+const word_list = document.getElementById("word_list");
+nouns.forEach(noun => {
+    let text = `<b>${noun.nominative.singular}</b> (gen sg. <b>${noun.genitive.singular}</b>) (f) "${noun.gloss}"`;
+    let node = document.createElement("li");
+    node.innerHTML = text;
+    word_list.appendChild(node);
+});
