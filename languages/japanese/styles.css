@@ -5,3 +5,20 @@
 .intro p {
     text-indent: 2rem;
 }
+
+/* Big brane words to know */
+span.term {
+    font-weight: bold;
+    background-color: navajowhite;
+}
+
+/* Better to specify semantics than just do italics */
+span.romaji {
+    font-style: italic;
+}
+
+/* lang tag important to make sure Japanese doesn't render as Chinese */
+span[lang="ja"] {
+    background-color: azure;
+    color: darkslategrey;
+}
