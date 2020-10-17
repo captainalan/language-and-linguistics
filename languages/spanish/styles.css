@@ -1,0 +1,12 @@
+#title-splash {
+    font-size: 500%;
+    font-weight: bold;
+}
+      
+span[lang="es"] {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+}
+.quick-facts {
+    background: #EEEEEE;
+}
