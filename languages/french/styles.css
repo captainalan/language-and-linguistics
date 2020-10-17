@@ -1,0 +1,8 @@
+span[lang="fr"] { 
+    font-family: 'Libre Baskerville', serif;
+}
+    
+blockquote[lang="fr"] {
+    padding: 1rem;
+    background-color: #f8f8ff; 
+}
