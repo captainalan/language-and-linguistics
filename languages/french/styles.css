@@ -1,3 +1,13 @@
+#title-splash {
+    color: navy;
+    font-size: 500%;
+    font-weight: lighter;
+}
+
+span.term {
+    font-weight: bold;
+}
+
 span[lang="fr"] { 
     font-family: 'Libre Baskerville', serif;
 }
