@@ -1,0 +1,6 @@
+#+TITLE: Russian Phrases
+* Introduction
+  This document contains bits of Russian to study
+* Topical
+** Learning
+   - по́вторение мать у́чения :: repetition is the mother of teaching
