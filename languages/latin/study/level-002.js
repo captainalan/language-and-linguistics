@@ -123,153 +123,93 @@ const nounTable = document.getElementById("table-area");
 // Vocabulary as dictionary
 const nouns = [
     {
-        id: "tabella", // For lookup
-        gloss: "tablet",
-        gender: "f", // should be 'm', 'f', or 'n'
-        declension: "first",
+        id: "mūrus", // For lookup
+        gloss: "wall",
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
         nominative: {
-            singular: "tabella",
-            plural: "tabellæ",
+            singular: "mūrus",
+            plural: "mūrī",
         },
         genitive: {
-            singular: "tabellæ",
-            plural: "tabellārum",
+            singular: "mūrī",
+            plural: "mūrōrum",
         },
         dative: {
-            singular: "tabellæ",
-            plural: "tabellīs",
+            singular: "mūrō",
+            plural: "mūrīs",
         },
         accusative: {
-            singular: "tabellam",
-            plural: "tabellās",
+            singular: "mūrum",
+            plural: "mūrōs",
         },
         ablative: {
-            singular: "tabellā",
-            plural: "tabellīs",
+            singular: "mūrō",
+            plural: "mūrīs",
         },
         vocative: {
-            singular: "tabella",
-            plural: "tabellæ",
+            singular: "mūre",
+            plural: "mūrī",
         },
     },
     {
-        id: "porta", // For lookup
-        gloss: "gate",
-        gender: "f", // should be 'm', 'f', or 'n'
-        declension: "first",
+        id: "puer", // For lookup
+        gloss: "boy",
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
         nominative: {
-            singular: "porta",
-            plural: "portæ",
+            singular: "puer",
+            plural: "puerī",
         },
         genitive: {
-            singular: "portæ",
-            plural: "portārum",
+            singular: "puerī",
+            plural: "puerōrum",
         },
         dative: {
-            singular: "portæ",
-            plural: "portīs",
+            singular: "puerō",
+            plural: "puerīs",
         },
         accusative: {
-            singular: "portam",
-            plural: "portās",
+            singular: "puerum",
+            plural: "puerōs",
         },
         ablative: {
-            singular: "portā",
-            plural: "portīs",
+            singular: "puerō",
+            plural: "puerīs",
         },
         vocative: {
-            singular: "porta",
-            plural: "portæ",
+            singular: "puer",
+            plural: "puerī",
         },
     },
     {
-        id: "puella", // For lookup
-        gloss: "girl",
-        gender: "f", // should be 'm', 'f', or 'n'
-        declension: "first",
+        id: "magister", // For lookup
+        gloss: "teacher",
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
         nominative: {
-            singular: "puella",
-            plural: "puellæ",
+            singular: "magister",
+            plural: "magistrī",
         },
         genitive: {
-            singular: "puellæ",
-            plural: "puellārum",
+            singular: "magistrī",
+            plural: "magistrōrum",
         },
         dative: {
-            singular: "puellæ",
-            plural: "puellīs",
+            singular: "magistrō",
+            plural: "magistrīs",
         },
         accusative: {
-            singular: "puellam",
-            plural: "puellās",
+            singular: "magistrum",
+            plural: "magistrōs",
         },
         ablative: {
-            singular: "puellā",
-            plural: "puellīs",
+            singular: "magistrō",
+            plural: "magistrīs",
         },
         vocative: {
-            singular: "puella",
-            plural: "puellæ",
-        },
-    },
-    {
-        id: "furca", // For lookup
-        gloss: "fork",
-        gender: "f", // should be 'm', 'f', or 'n'
-        declension: "first",
-        nominative: {
-            singular: "furca",
-            plural: "furcæ",
-        },
-        genitive: {
-            singular: "furcæ",
-            plural: "furcārum",
-        },
-        dative: {
-            singular: "furcæ",
-            plural: "furcīs",
-        },
-        accusative: {
-            singular: "furcam",
-            plural: "furcās",
-        },
-        ablative: {
-            singular: "furcā",
-            plural: "furcīs",
-        },
-        vocative: {
-            singular: "furca",
-            plural: "furcæ",
-        },
-    },
-    {
-        id: "galea", // For lookup
-        gloss: "helmet",
-        gender: "f", // should be 'm', 'f', or 'n'
-        declension: "first",
-        nominative: {
-            singular: "galea",
-            plural: "galeæ",
-        },
-        genitive: {
-            singular: "galeæ",
-            plural: "galeārum",
-        },
-        dative: {
-            singular: "galeæ",
-            plural: "galeīs",
-        },
-        accusative: {
-            singular: "galeam",
-            plural: "galeās",
-        },
-        ablative: {
-            singular: "galeā",
-            plural: "galeīs",
-        },
-        vocative: {
-            singular: "galea",
-            plural: "galeæ",
+            singular: "magister",
+            plural: "magistrī",
         },
     },
 ];
