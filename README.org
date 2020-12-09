@@ -2,6 +2,22 @@
   See the thing deployed on [[https://captainalan.github.io/language-and-linguistics][Github Pages]].
   
 ** Planned updates
-   I'm refactoring content on the main pages into smaller,
-   single-topic pages. No links should be broken through this process,
-   though new pages will be created.
+*** Language Pages
+**** Chinese   
+**** Japanese
+     Provide some information on how to use Japanese resources
+**** Korean
+**** Latin Learning Pages
+***** TODO Add navigation to go through lessons
+      Maybe this can be done in the common.js file imported by all
+      lessons.
+***** DONE Refactor common functions into shared file
+***** TODO Make pages for all noun declensions
+      Later, I can edit the example sentences for more variety.
+      Introduce some useful grammatical concepts
+***** TODO Adjectives
+      Introduce after nouns, easily introduce grammatical /agreement/.
+      Adjective pages can use many of the same nouns as the noun pages.
+***** TODO Pronouns
+***** TODO Demonstratives
+
