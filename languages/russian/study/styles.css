@@ -1,0 +1,65 @@
+/* For noun charts */
+.table-label-masculine {
+    background-color: #85E3FF;
+}
+.table-label-feminine {
+    background-color: #FFBEBC;
+}
+.table-label-neuter {
+    background-color: #DEDEDE;
+}
+
+
+/* For verb chart */
+.table-label-e {
+    color: white;
+    background-color: red;
+}
+.table-label-i {
+    color: white;
+    background-color: blue;
+}
+
+/* For headings "Masculine", "Feminine", and "Neuter" */
+.header-box {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* By having the two items below with fixed heights,
+    vertical alignment is easy */
+.table-notes-box {
+    height: 3rem;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.keyword {
+    font-size: 150%;
+}
+caption {
+    height: 6rem;
+}
+
+
+/* Table style tweaks */
+th {
+    background-color: #FAFAFA;
+}
+
+/* Russian language examples in-line */
+span[lang="ru"]{
+    color: navy;
+    font-weight: bold;
+}
+
+/* Work In Progress stuff */
+.to-be-added {
+    font-size: 80%;
+    color: red;
+}
+
+footer {
+    background-color: #e9ecef; /* Same as jumbotron */
+}
