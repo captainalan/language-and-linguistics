@@ -4,7 +4,10 @@
 const nouns = [
     {
         id: "tabella", // For lookup
-        gloss: "tablet",
+        gloss: {
+            singular: "tablet",
+            plural: "tablets",
+        },
         gender: "f", // should be 'm', 'f', or 'n'
         declension: "first",
         nominative: {
@@ -34,7 +37,10 @@ const nouns = [
     },
     {
         id: "porta", // For lookup
-        gloss: "gate",
+        gloss: {
+            singular: "gate",
+            plural: "gates",
+        },
         gender: "f", // should be 'm', 'f', or 'n'
         declension: "first",
         nominative: {
@@ -64,7 +70,10 @@ const nouns = [
     },
     {
         id: "puella", // For lookup
-        gloss: "girl",
+        gloss: {
+            singular: "girl",
+            plural: "girls"
+        },
         gender: "f", // should be 'm', 'f', or 'n'
         declension: "first",
         nominative: {
@@ -94,7 +103,10 @@ const nouns = [
     },
     {
         id: "furca", // For lookup
-        gloss: "fork",
+        gloss: {
+            singular: "fork",
+            plural: "forks",
+        },
         gender: "f", // should be 'm', 'f', or 'n'
         declension: "first",
         nominative: {
@@ -124,7 +136,10 @@ const nouns = [
     },
     {
         id: "galea", // For lookup
-        gloss: "helmet",
+        gloss: {
+            singular: "helmet",
+            plural: "helmets",
+        },
         gender: "f", // should be 'm', 'f', or 'n'
         declension: "first",
         nominative: {

@@ -4,7 +4,10 @@
 const nouns = [
     {
         id: "mūrus", // For lookup
-        gloss: "wall",
+        gloss: {
+            singular: "wall",
+            plural: "walls",
+        },
         gender: "m", // should be 'm', 'f', or 'n'
         declension: "second",
         nominative: {
@@ -34,7 +37,10 @@ const nouns = [
     },
     {
         id: "puer", // For lookup
-        gloss: "boy",
+        gloss: {
+            singular: "boy",
+            plural: "boys",
+        },
         gender: "m", // should be 'm', 'f', or 'n'
         declension: "second",
         nominative: {
@@ -64,7 +70,10 @@ const nouns = [
     },
     {
         id: "magister", // For lookup
-        gloss: "teacher",
+        gloss: {
+            singular: "teacher",
+            plural: "teachers",
+        },
         gender: "m", // should be 'm', 'f', or 'n'
         declension: "second",
         nominative: {

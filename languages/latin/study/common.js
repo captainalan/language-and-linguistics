@@ -5,7 +5,7 @@
 const populate_wordlist = function(nouns) {
     const word_list = document.getElementById("word_list");
     nouns.forEach(noun => {
-        let text = `<b>${noun.nominative.singular}</b> (gen sg. <b>${noun.genitive.singular}</b>) (${noun.gender}) "${noun.gloss}"`;
+        let text = `<b>${noun.nominative.singular}</b> (gen sg. <b>${noun.genitive.singular}</b>) (${noun.gender}) "${noun.gloss.singular}"`;
         let node = document.createElement("li");
         node.innerHTML = text;
         word_list.appendChild(node);
@@ -122,9 +122,14 @@ const update_sentences = function(noun) {
     vocative_pl.innerText = noun.vocative.plural
         .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
 
-    const glosses = document.getElementsByClassName("inline_gloss");
-    for (let i = 0; i < glosses.length; i++) {
-        glosses.item(i).innerText =  noun.gloss;
+    const glosses_singular = document.getElementsByClassName("inline_gloss_singular");
+    for (let i = 0; i < glosses_singular.length; i++) {
+        glosses_singular.item(i).innerText =  noun.gloss.singular;
+    }
+
+    const glosses_plural = document.getElementsByClassName("inline_gloss_plural");
+    for (let i = 0; i < glosses_plural.length; i++) {
+        glosses_plural.item(i).innerText =  noun.gloss.plural;
     }
 }
 

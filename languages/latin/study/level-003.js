@@ -4,7 +4,10 @@
 const nouns = [
     {
         id: "rēx", // For lookup
-        gloss: "king",
+        gloss: {
+            singular: "king",
+            plural: "kings",
+        },
         gender: "m", // should be 'm', 'f', or 'n'
         declension: "second",
         nominative: {
@@ -30,6 +33,39 @@ const nouns = [
         vocative: {
             singular: "rēx",
             plural: "rēgēs",
+        },
+    },
+    {
+        id: "homō", // For lookup
+        gloss: {
+            singular: "man",
+            plural: "men"
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
+        nominative: {
+            singular: "homō",
+            plural: "hominēs",
+        },
+        genitive: {
+            singular: "hominis",
+            plural: "hominum",
+        },
+        dative: {
+            singular: "hominī",
+            plural: "hominibus",
+        },
+        accusative: {
+            singular: "hominem",
+            plural: "hominēs",
+        },
+        ablative: {
+            singular: "homine",
+            plural: "hominibus",
+        },
+        vocative: {
+            singular: "homō",
+            plural: "hominēs",
         },
     },
 ];
