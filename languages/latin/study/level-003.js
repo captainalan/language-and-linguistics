@@ -9,7 +9,7 @@ const nouns = [
             plural: "kings",
         },
         gender: "m", // should be 'm', 'f', or 'n'
-        declension: "second",
+        declension: "third",
         nominative: {
             singular: "rēx",
             plural: "rēgēs",
@@ -42,7 +42,7 @@ const nouns = [
             plural: "men"
         },
         gender: "m", // should be 'm', 'f', or 'n'
-        declension: "second",
+        declension: "third",
         nominative: {
             singular: "homō",
             plural: "hominēs",
