@@ -12,6 +12,29 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <style>
+    #fighting [lang=ko] {
+      font-weight: bold;
+      font-size: 250%;
+      text-shadow: 1px 1px 1px #000,
+        3px 3px 5px rgb(255, 38, 0);
+    }
+
+    #fighting [lang=en] {
+      font-size: 240%;
+      font-style: italic;
+      font-weight: lighter;
+      margin-left: 2rem;
+    }
+
+    #fighting p {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      line-height: 2.5rem;
+    }
+  </style>
 
   <title>Korean</title>
 </head>
@@ -28,21 +51,35 @@
         </div>
       </article>
     </section>
+    <section class="row justify-content-center">
+      <article class="col-md-8">
+        <p class="mt-4">
+          I've created this website on the Korean language to offload everything
+          I've learned about Korean (and <em>learning Korean</em>) so that you can
+          quickly acquire whatever level of Korean you're aiming for, avoiding the
+          running in circles and problems I've had to work through.
+        </p>
+      </article>
+    </section>
     <section class="row">
       <article class="col-md-6">
         <h2 class="text-center">Pages</h2>
-        <p
-        >Below are pages authored by me on Korean. Everything is a work in progress.
+        <p>
+          Below are pages authored by me on Korean. Everything is a work in progress.
+          Pages listed that aren't yet links are yet to be written.
         </p>
         <ul class="mb-4">
           <li><a href="pages/description.html">A Description of the Korean Language</a></li>
           <li><a href="input.html">Computer Input of the Korean Language</a></li>
           <li><a href="pages/my_interests.html">My journey into the Korean Language</a></li>
+          <li>Special Features of the Korean Internet</li>
+          <li>A Practical Grammar of Korean</li>
         </ul>
 
         <figure>
           <img class="figure-img img-fluid rounded"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Korea_satelliet.jpg/1280px-Korea_satelliet.jpg" alt="Aerial view of the Korean peninsula">
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Korea_satelliet.jpg/1280px-Korea_satelliet.jpg"
+            alt="Aerial view of the Korean peninsula">
 
           <figcaption class="figure-caption">
             Aerial view of the Korean peninsula (photo from NASA)
@@ -50,7 +87,7 @@
         </figure>
       </article>
       <article class="col-md-6">
-        <h2 class="text-center">Study/Tooling</h2>
+        <h2 class="text-center">Study and Tooling</h2>
         <p>
           Here, I list resources useful for studying Korean.
         </p>
@@ -58,7 +95,7 @@
         <ul>
           <li>
             <a href="https://en.dict.naver.com">Naver's Korean-English Dictionary</a>&mdash;this
-            excellent resource not only has "traditional" dictionary information, but also draws 
+            excellent resource not only has "traditional" dictionary information, but also draws
             on rich text corpora of example sentences showing how vocabulary is used
           </li>
           <li>
@@ -67,7 +104,26 @@
             Chinese and Japanese
           </li>
         </ul>
-        
+
+        <h3>Print Resources</h3>
+        <p>
+          In the past couple years, we've seen a big increase in the number of Korean
+          learning resources available. Briefly, my recommendations are to <em>acquire a <b>phrasebook</b> and a
+            <b>grammar</b></em>. An introductory textbook could be helpful to get started, but a phrasebook
+          is more useful for <em>instant communication</em> and a grammar is more
+          useful for <em>systematically laying out the grammar</em> of Korean.
+        </p>
+        <p>
+          Unless you have special concerns (e.g. travelling to the Korean
+          countryside without power), the online dictionaries listed here should
+          more than suffice for lexical resources.
+        </p>
+
+        <div id="fighting" class="mb-4 mt-4">
+          <p lang="ko">회이팅하세요!</p>
+          <p lang="en">Fighting!</p>
+        </div>
+
       </article>
     </section>
   </main>
