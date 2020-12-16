@@ -101,19 +101,118 @@ const nouns = [
             plural: "magistrī",
         },
     },
+    {
+        id: "locus", // For lookup
+        gloss: {
+            singular: "places",
+            plural: "places",
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
+        nominative: {
+            singular: "locus",
+            plural: "locī",
+        },
+        genitive: {
+            singular: "locī",
+            plural: "locōrum",
+        },
+        dative: {
+            singular: "locō",
+            plural: "locīs",
+        },
+        accusative: {
+            singular: "locum",
+            plural: "locōs",
+        },
+        ablative: {
+            singular: "locō",
+            plural: "locīs",
+        },
+        vocative: {
+            singular: "loce",
+            plural: "locī",
+        },
+    },
+    {
+        id: "caelus", // For lookup
+        gloss: {
+            singular: "heaven",
+            plural: "heavens",
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
+        nominative: {
+            singular: "caelus",
+            plural: "caelī",
+        },
+        genitive: {
+            singular: "caelī",
+            plural: "caelōrum",
+        },
+        dative: {
+            singular: "caelō",
+            plural: "caelīs",
+        },
+        accusative: {
+            singular: "caelum",
+            plural: "caelōs",
+        },
+        ablative: {
+            singular: "caelō",
+            plural: "caelīs",
+        },
+        vocative: {
+            singular: "caele",
+            plural: "caelī",
+        },
+    },
+    {
+        id: "cētus", // For lookup
+        gloss: {
+            singular: "sea monster",
+            plural: "sea monsters",
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
+        nominative: {
+            singular: "cētus",
+            plural: "cētī",
+        },
+        genitive: {
+            singular: "cētī",
+            plural: "cētōrum",
+        },
+        dative: {
+            singular: "cētō",
+            plural: "cētīs",
+        },
+        accusative: {
+            singular: "cētum",
+            plural: "cētōs",
+        },
+        ablative: {
+            singular: "cētō",
+            plural: "cētīs",
+        },
+        vocative: {
+            singular: "cēte",
+            plural: "cētī",
+        },
+    },
 ];
 
 // Populate wordlist
 populate_wordlist(nouns);
 
-// Clicking button draws new noun table
-nounButton.onclick = function() {
-    let choice = Math.floor(Math.random() * nouns.length);
-    noun_table(nounTable, nouns[choice]);
-    
-    // Update the example sentences
-    update_sentences(nouns[choice]);
-
+// Click handlers
+const nounButtonNext = document.getElementById("table-button-next");
+const nounButtonRandom = document.getElementById("table-button-random");
+nounButtonNext.onclick = () => {
+    draw_next_word(nouns);
+};
+nounButtonRandom.onclick = () => {
+    draw_random_word(nouns);
 };
 
 // Initialize table with the first noun

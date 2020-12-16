@@ -73,14 +73,14 @@ const nouns = [
 // Populate wordlist
 populate_wordlist(nouns);
 
-// Clicking button draws new noun table
-nounButton.onclick = function() {
-    let choice = Math.floor(Math.random() * nouns.length);
-    noun_table(nounTable, nouns[choice]);
-    
-    // Update the example sentences
-    update_sentences(nouns[choice]);
-
+// Click handlers
+const nounButtonNext = document.getElementById("table-button-next");
+const nounButtonRandom = document.getElementById("table-button-random");
+nounButtonNext.onclick = () => {
+    draw_next_word(nouns);
+};
+nounButtonRandom.onclick = () => {
+    draw_random_word(nouns);
 };
 
 // Initialize table with the first noun

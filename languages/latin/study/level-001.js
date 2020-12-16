@@ -167,19 +167,85 @@ const nouns = [
             plural: "galeæ",
         },
     },
+    {
+        id: "terra", // For lookup
+        gloss: {
+            singular: "earth",
+            plural: "lands",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "terra",
+            plural: "terræ",
+        },
+        genitive: {
+            singular: "terræ",
+            plural: "terrārum",
+        },
+        dative: {
+            singular: "terræ",
+            plural: "terrīs",
+        },
+        accusative: {
+            singular: "terram",
+            plural: "terrās",
+        },
+        ablative: {
+            singular: "terrā",
+            plural: "terrīs",
+        },
+        vocative: {
+            singular: "terra",
+            plural: "terræ",
+        },
+    },
+    {
+        id: "lacrima", // For lookup
+        gloss: {
+            singular: "tear",
+            plural: "tears",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "lacrima",
+            plural: "lacrimæ",
+        },
+        genitive: {
+            singular: "lacrimæ",
+            plural: "lacrimārum",
+        },
+        dative: {
+            singular: "lacrimæ",
+            plural: "lacrimīs",
+        },
+        accusative: {
+            singular: "lacrimam",
+            plural: "lacrimās",
+        },
+        ablative: {
+            singular: "lacrimā",
+            plural: "lacrimīs",
+        },
+        vocative: {
+            singular: "lacrima",
+            plural: "lacrimæ",
+        },
+    },
 ];
 
 // Populate wordlist
 populate_wordlist(nouns);
 
-// Clicking button draws new noun table
-nounButton.onclick = function() {
-    let choice = Math.floor(Math.random() * nouns.length);
-    noun_table(nounTable, nouns[choice]);
-    
-    // Update the example sentences
-    update_sentences(nouns[choice]);
-
+// Click handlers
+const nounButtonNext = document.getElementById("table-button-next");
+const nounButtonRandom = document.getElementById("table-button-random");
+nounButtonNext.onclick = () => {
+    draw_next_word(nouns);
+};
+nounButtonRandom.onclick = () => {
+    draw_random_word(nouns);
 };
 
 // Initialize table with the first noun
