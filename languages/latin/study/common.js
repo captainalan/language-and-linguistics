@@ -164,4 +164,6 @@ function draw_random_word (nouns) {
   update_sentences(nouns[current_choice]);
 }
 
-// TODO create navigation component
+// Navigation element should be in a <div> called "navigation-box"
+const navigationBox = document.getElementById("navigation-box");
+// Access data property storing lesson number

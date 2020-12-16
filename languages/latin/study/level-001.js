@@ -233,6 +233,204 @@ const nouns = [
             plural: "lacrimæ",
         },
     },
+    {
+        id: "aqua", // For lookup
+        gloss: {
+            singular: "water",
+            plural: "waters",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "aqua",
+            plural: "aquæ",
+        },
+        genitive: {
+            singular: "aquæ",
+            plural: "aquārum",
+        },
+        dative: {
+            singular: "aquæ",
+            plural: "aquīs",
+        },
+        accusative: {
+            singular: "aquam",
+            plural: "aquās",
+        },
+        ablative: {
+            singular: "aquā",
+            plural: "aquīs",
+        },
+        vocative: {
+            singular: "aqua",
+            plural: "aquæ",
+        },
+    },
+    {
+        id: "cēna", // For lookup
+        gloss: {
+            singular: "dinner",
+            plural: "dinners",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "cēna",
+            plural: "cēnæ",
+        },
+        genitive: {
+            singular: "cēnæ",
+            plural: "cēnārum",
+        },
+        dative: {
+            singular: "cēnæ",
+            plural: "cēnīs",
+        },
+        accusative: {
+            singular: "cēnam",
+            plural: "cēnās",
+        },
+        ablative: {
+            singular: "cēnā",
+            plural: "cēnīs",
+        },
+        vocative: {
+            singular: "cēna",
+            plural: "cēnæ",
+        },
+    },
+    {
+        id: "culpa", // For lookup
+        gloss: {
+            singular: "fault",
+            plural: "faults",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "culpa",
+            plural: "culpæ",
+        },
+        genitive: {
+            singular: "culpæ",
+            plural: "culpārum",
+        },
+        dative: {
+            singular: "culpæ",
+            plural: "culpīs",
+        },
+        accusative: {
+            singular: "culpam",
+            plural: "culpās",
+        },
+        ablative: {
+            singular: "culpā",
+            plural: "culpīs",
+        },
+        vocative: {
+            singular: "culpa",
+            plural: "culpæ",
+        },
+    },
+    {
+        id: "doctrīna", // For lookup
+        gloss: {
+            singular: "teaching",
+            plural: "teachings",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "doctrīna",
+            plural: "doctrīnæ",
+        },
+        genitive: {
+            singular: "doctrīnæ",
+            plural: "doctrīnārum",
+        },
+        dative: {
+            singular: "doctrīnæ",
+            plural: "doctrīnīs",
+        },
+        accusative: {
+            singular: "doctrīnam",
+            plural: "doctrīnās",
+        },
+        ablative: {
+            singular: "doctrīnā",
+            plural: "doctrīnīs",
+        },
+        vocative: {
+            singular: "doctrīna",
+            plural: "doctrīnæ",
+        },
+    },
+    {
+        id: "ecclēsia", // For lookup
+        gloss: {
+            singular: "church",
+            plural: "churches",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "ecclēsia",
+            plural: "ecclēsiæ",
+        },
+        genitive: {
+            singular: "ecclēsiæ",
+            plural: "ecclēsiārum",
+        },
+        dative: {
+            singular: "ecclēsinæ",
+            plural: "ecclēsiīs",
+        },
+        accusative: {
+            singular: "ecclēsiam",
+            plural: "ecclēsiās",
+        },
+        ablative: {
+            singular: "ecclēsiā",
+            plural: "ecclēsiīs",
+        },
+        vocative: {
+            singular: "ecclēsia",
+            plural: "ecclēsiæ",
+        },
+    },
+    {
+        id: "familia", // For lookup
+        gloss: {
+            singular: "family",
+            plural: "families",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "familia",
+            plural: "familiæ",
+        },
+        genitive: {
+            singular: "familiæ",
+            plural: "familiārum",
+        },
+        dative: {
+            singular: "familiæ",
+            plural: "familiīs",
+        },
+        accusative: {
+            singular: "familiam",
+            plural: "familiās",
+        },
+        ablative: {
+            singular: "familiā",
+            plural: "familiīs",
+        },
+        vocative: {
+            singular: "familia",
+            plural: "familiæ",
+        },
+    },
 ];
 
 // Populate wordlist
