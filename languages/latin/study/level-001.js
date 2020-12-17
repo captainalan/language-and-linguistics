@@ -431,6 +431,39 @@ const nouns = [
             plural: "familiæ",
         },
     },
+    {
+        id: "ancilla", // For lookup
+        gloss: {
+            singular: "maid",
+            plural: "maids",
+        },
+        gender: "f", // should be 'm', 'f', or 'n'
+        declension: "first",
+        nominative: {
+            singular: "ancilla",
+            plural: "ancillæ",
+        },
+        genitive: {
+            singular: "ancillæ",
+            plural: "ancillārum",
+        },
+        dative: {
+            singular: "ancillæ",
+            plural: "ancillīs",
+        },
+        accusative: {
+            singular: "ancillam",
+            plural: "ancillās",
+        },
+        ablative: {
+            singular: "ancillā",
+            plural: "ancillīs",
+        },
+        vocative: {
+            singular: "ancilla",
+            plural: "ancillæ",
+        },
+    },
 ];
 
 // Populate wordlist

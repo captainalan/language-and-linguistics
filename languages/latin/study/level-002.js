@@ -137,34 +137,34 @@ const nouns = [
     {
         id: "caelus", // For lookup
         gloss: {
-            singular: "heaven",
-            plural: "heavens",
+            singular: "sky",
+            plural: "skies",
         },
         gender: "m", // should be 'm', 'f', or 'n'
         declension: "second",
         nominative: {
-            singular: "caelus",
-            plural: "caelī",
+            singular: "cælus",
+            plural: "caælī",
         },
         genitive: {
-            singular: "caelī",
-            plural: "caelōrum",
+            singular: "cælī",
+            plural: "cælōrum",
         },
         dative: {
-            singular: "caelō",
-            plural: "caelīs",
+            singular: "cælō",
+            plural: "cælīs",
         },
         accusative: {
-            singular: "caelum",
-            plural: "caelōs",
+            singular: "cælum",
+            plural: "cælōs",
         },
         ablative: {
-            singular: "caelō",
-            plural: "caelīs",
+            singular: "cælō",
+            plural: "cælīs",
         },
         vocative: {
-            singular: "caele",
-            plural: "caelī",
+            singular: "cæle",
+            plural: "cælī",
         },
     },
     {
@@ -198,6 +198,39 @@ const nouns = [
         vocative: {
             singular: "cēte",
             plural: "cētī",
+        },
+    },
+    {
+        id: "servus",
+        gloss: {
+            singular: "servant",
+            plural: "servants",
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "second",
+        nominative: {
+            singular: "servus",
+            plural: "servī",
+        },
+        genitive: {
+            singular: "servī",
+            plural: "servōrum",
+        },
+        dative: {
+            singular: "servō",
+            plural: "servīs",
+        },
+        accusative: {
+            singular: "servum",
+            plural: "servōs",
+        },
+        ablative: {
+            singular: "servō",
+            plural: "servīs",
+        },
+        vocative: {
+            singular: "serve",
+            plural: "servī",
         },
     },
 ];

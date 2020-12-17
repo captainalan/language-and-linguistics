@@ -68,6 +68,237 @@ const nouns = [
             plural: "hominēs",
         },
     },
+    {
+        id: "corpus", // For lookup
+        gloss: {
+            singular: "body",
+            plural: "bodies"
+        },
+        gender: "n", // should be 'm', 'f', or 'n'
+        declension: "third",
+        nominative: {
+            singular: "corpus",
+            plural: "corpora",
+        },
+        genitive: {
+            singular: "corporis",
+            plural: "corporum",
+        },
+        dative: {
+            singular: "corporī",
+            plural: "corporibus",
+        },
+        accusative: {
+            singular: "corpus",
+            plural: "corpora",
+        },
+        ablative: {
+            singular: "corpore",
+            plural: "corporibus",
+        },
+        vocative: {
+            singular: "corpus",
+            plural: "corpora",
+        },
+    },
+    {
+        id: "genus", // For lookup
+        gloss: {
+            singular: "type",
+            plural: "types"
+        },
+        gender: "n", // should be 'm', 'f', or 'n'
+        declension: "third",
+        nominative: {
+            singular: "genus",
+            plural: "genera",
+        },
+        genitive: {
+            singular: "generis",
+            plural: "generum",
+        },
+        dative: {
+            singular: "generī",
+            plural: "generibus",
+        },
+        accusative: {
+            singular: "genus",
+            plural: "genera",
+        },
+        ablative: {
+            singular: "genere",
+            plural: "generibus",
+        },
+        vocative: {
+            singular: "genus",
+            plural: "genera",
+        },
+    },
+    {
+        id: "lūmen", // For lookup
+        gloss: {
+            singular: "light",
+            plural: "lights"
+        },
+        gender: "n", // should be 'm', 'f', or 'n'
+        declension: "third",
+        nominative: {
+            singular: "lūmen",
+            plural: "lūmina",
+        },
+        genitive: {
+            singular: "lūminis",
+            plural: "lūminum",
+        },
+        dative: {
+            singular: "lūminī",
+            plural: "lūminibus",
+        },
+        accusative: {
+            singular: "lūmen",
+            plural: "lūmina",
+        },
+        ablative: {
+            singular: "lūmine",
+            plural: "lūminibus",
+        },
+        vocative: {
+            singular: "lūmen",
+            plural: "lūmina",
+        },
+    },
+    {
+        id: "cantor",
+        gloss: {
+            singular: "singer",
+            plural: "singers"
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "third",
+        nominative: {
+            singular: "cantor",
+            plural: "cantōrēs",
+        },
+        genitive: {
+            singular: "cantōris",
+            plural: "cantōrum",
+        },
+        dative: {
+            singular: "cantōrī",
+            plural: "cantōribus",
+        },
+        accusative: {
+            singular: "cantōrem",
+            plural: "cantōrēs",
+        },
+        ablative: {
+            singular: "cantōre",
+            plural: "cantōribus",
+        },
+        vocative: {
+            singular: "cantor",
+            plural: "cantōrēs",
+        },
+    },
+    {
+        id: "lēctor",
+        gloss: {
+            singular: "reader",
+            plural: "readers"
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "third",
+        nominative: {
+            singular: "lēctor",
+            plural: "lēctōrēs",
+        },
+        genitive: {
+            singular: "lēctōris",
+            plural: "lēctōrum",
+        },
+        dative: {
+            singular: "lēctōrī",
+            plural: "lēctōribus",
+        },
+        accusative: {
+            singular: "lēctōrem",
+            plural: "lēctōrēs",
+        },
+        ablative: {
+            singular: "lēctōre",
+            plural: "lēctōribus",
+        },
+        vocative: {
+            singular: "lēctor",
+            plural: "lēctōrēs",
+        },
+    },
+    {
+        id: "pānis",
+        gloss: {
+            singular: "loaf of bread",
+            plural: "loaves of bread"
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "third",
+        nominative: {
+            singular: "pānis",
+            plural: "pānēs",
+        },
+        genitive: {
+            singular: "pānis",
+            plural: "pānum",
+        },
+        dative: {
+            singular: "pānī",
+            plural: "pānibus",
+        },
+        accusative: {
+            singular: "pānem",
+            plural: "pānēs",
+        },
+        ablative: {
+            singular: "pāne",
+            plural: "pānibus",
+        },
+        vocative: {
+            singular: "pānis",
+            plural: "pānēs",
+        },
+    },
+    {
+        id: "postis",
+        gloss: {
+            singular: "doorpost",
+            plural: "doorposts"
+        },
+        gender: "m", // should be 'm', 'f', or 'n'
+        declension: "third",
+        nominative: {
+            singular: "postis",
+            plural: "postēs",
+        },
+        genitive: {
+            singular: "postis",
+            plural: "postium",
+        },
+        dative: {
+            singular: "postī",
+            plural: "postibus",
+        },
+        accusative: {
+            singular: "postem",
+            plural: "postēs",
+        },
+        ablative: {
+            singular: "poste",
+            plural: "postibus",
+        },
+        vocative: {
+            singular: "postis",
+            plural: "postēs",
+        },
+    },
 ];
 
 // Populate wordlist

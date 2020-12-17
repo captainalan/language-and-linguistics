@@ -84,11 +84,9 @@ const update_sentences = function (noun) {
 
   const nominative_sg = document.getElementById("nominative_singular_example");
   nominative_sg.innerText = noun.nominative.singular
-    .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
 
   const nominative_pl = document.getElementById("nominative_plural_example");
   nominative_pl.innerText = noun.nominative.plural
-    .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
 
   const genitive_sg = document.getElementById("genitive_singular_example");
   genitive_sg.innerText = noun.genitive.singular;
@@ -98,7 +96,6 @@ const update_sentences = function (noun) {
 
   const accusative_sg = document.getElementById("accusative_singular_example");
   accusative_sg.innerText = noun.accusative.singular
-    .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
 
   const accusative_pl = document.getElementById("accusative_plural_example");
   accusative_pl.innerText = noun.accusative.plural;
@@ -116,11 +113,9 @@ const update_sentences = function (noun) {
 
   const vocative_sg = document.getElementById("vocative_singular_example");
   vocative_sg.innerText = noun.vocative.singular
-    .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
 
   const vocative_pl = document.getElementById("vocative_plural_example");
   vocative_pl.innerText = noun.vocative.plural
-    .replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
 
   const glosses_singular = document.getElementsByClassName("inline_gloss_singular");
   for (let i = 0; i < glosses_singular.length; i++) {
