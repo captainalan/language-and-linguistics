@@ -168,6 +168,39 @@ const nouns = [
         },
     },
     {
+        id: "caelum", // alternative form of caelum
+        gloss: {
+            singular: "sky",
+            plural: "skies",
+        },
+        gender: "n", // should be 'm', 'f', or 'n'
+        declension: "second",
+        nominative: {
+            singular: "cælum",
+            plural: "caælī",
+        },
+        genitive: {
+            singular: "cælī",
+            plural: "cælōrum",
+        },
+        dative: {
+            singular: "cælō",
+            plural: "cælīs",
+        },
+        accusative: {
+            singular: "cælum",
+            plural: "cælōs",
+        },
+        ablative: {
+            singular: "cælō",
+            plural: "cælīs",
+        },
+        vocative: {
+            singular: "cælme",
+            plural: "cælī",
+        },
+    },
+    {
         id: "cētus", // For lookup
         gloss: {
             singular: "sea monster",
@@ -231,6 +264,39 @@ const nouns = [
         vocative: {
             singular: "serve",
             plural: "servī",
+        },
+    },
+    {
+        id: "verbum",
+        gloss: {
+            singular: "word",
+            plural: "words",
+        },
+        gender: "n", // should be 'm', 'f', or 'n'
+        declension: "second",
+        nominative: {
+            singular: "verbum",
+            plural: "verba",
+        },
+        genitive: {
+            singular: "verbī",
+            plural: "verbōrum",
+        },
+        dative: {
+            singular: "verbō",
+            plural: "verbīs",
+        },
+        accusative: {
+            singular: "verbum",
+            plural: "verba",
+        },
+        ablative: {
+            singular: "verbō",
+            plural: "verbīs",
+        },
+        vocative: {
+            singular: "verbum",
+            plural: "verba",
         },
     },
 ];
