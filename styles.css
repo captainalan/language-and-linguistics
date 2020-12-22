@@ -1,26 +1,7 @@
 /* Plain tags first */
 h1 {
-    text-align: center;
-    padding: 1rem 0 1rem 0;
-}
-
-h2 {
     font-family: "Arial", sans-serif;
-    text-weight: bold;
-    text-align: center;
-    padding: 1rem 0 1rem 0;
-}
-
-h3, h4, h5 {
-    font-family: "Arial", sans-serif;
-    text-align: left;
-    padding: 1rem 0 1rem 1rem; /* Some left indenting */
-}
-
-
-p {
-    font-family: "Arial", sans-serif;
-    padding: 0 1rem 0.5rem 1rem;
+    font-weight: bold;
 }
 
 p[lang|="zh"], p[lang="ja"], p[lang="ko"] {
