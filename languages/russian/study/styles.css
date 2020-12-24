@@ -20,6 +20,11 @@
     background-color: blue;
 }
 
+/* For adjective chart */
+.table-label-adj {
+    background-color: yellow;
+}
+
 /* For headings "Masculine", "Feminine", and "Neuter" */
 .header-box {
     margin-bottom: 30px;
