@@ -21,3 +21,9 @@ span.example_word {
     font-weight: bold;
     color: navy;
 }
+
+span[lang="la"] {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: navy;
+}
