@@ -7,7 +7,7 @@
     border-radius: 25px;
 }
 
-.ru-text {
+span[lang="ru"] {
     font-family: 'Podkova';
     font-size: 125%;
     color: #800000;
