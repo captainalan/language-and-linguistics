@@ -1,6 +1,6 @@
 #title-splash {
     color: navy;
-    font-size: 500%;
+    font-size: 300%;
     font-weight: lighter;
 }
 
@@ -8,11 +8,11 @@ span.term {
     font-weight: bold;
 }
 
-span[lang="fr"] { 
+span.term[lang="fr"] { 
     font-family: 'Libre Baskerville', serif;
 }
     
-blockquote[lang="fr"] {
+blockquote {
     padding: 1rem;
     background-color: #f8f8ff; 
 }
