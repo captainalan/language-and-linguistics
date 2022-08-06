@@ -1,0 +1,11 @@
+.vocab-item span.part-of-speech {
+    color: #999;
+    font-style: italic;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.vocab-item span.term {
+    font-weight: bold;
+    color: navy;
+}
